@@ -4,4 +4,4 @@ chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app
 
 # ADD GPIO69 as pwm dts
 echo "apply patch..."
-patch -p0 ../scripts/012-add-pwm-for-gpio69.patch
+patch -p1 ../scripts/012-add-pwm-for-gpio69.patch
