@@ -1,6 +1,6 @@
---- a/target/linux/qualcommax/files/arch/arm64/boot/dts/qcom/ipq6018-zn-m2.dts
-+++ b/target/linux/qualcommax/files/arch/arm64/boot/dts/qcom/ipq6018-zn-m2.dts
-@@ -48,6 +48,13 @@
+--- a/target/linux/qualcommax/dts/ipq6000-m2.dts	2026-06-16 18:05:42.828426633 +0800
++++ b/target/linux/qualcommax/dts/ipq6000-m2.dts	2026-06-17 19:00:31.131341546 +0800
+@@ -48,10 +48,39 @@
  			gpios = <&tlmm 70 GPIO_ACTIVE_HIGH>;
  		};
  	};
@@ -14,10 +14,12 @@
  };
  
  &wifi {
-@@ -55,3 +62,24 @@
+ 	status = "okay";
  	qcom,ath11k-fw-memory-mode = <1>;
  	qcom,ath11k-calibration-variant = "ZN-M2";
- };
+-};
+\ No newline at end of file
++};
 +
 +&soc {
 +	gpio_pwm: pwm@0 {
